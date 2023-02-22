@@ -1,0 +1,9 @@
+<h1>Team {{ team.name }}</h1>
+<form method="post">
+  {% csrf_token %}
+  {% if receiving_data %}
+    <button type="submit" name="stop">Stop receiving data</button>
+  {% else %}
+    <button type="submit" name="start">Start receiving data</button>
+  {% endif %}
+</form>

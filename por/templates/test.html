@@ -1,0 +1,9 @@
+<h1>Test here bruh </h1>
+<form method="post">
+  {% csrf_token %}
+  {% if parame %}
+    <button type="submit" name="stop">Stop receiving data</button>
+  {% else %}
+    <button type="submit" name="start">Start receiving data</button>
+  {% endif %}
+</form>
